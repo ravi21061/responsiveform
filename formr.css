@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(134deg,#71b7e6,#9b59b6);
+}
+.container{
+	max-width: 700px;
+	width: 100%;
+	background-color: #fff;
+	padding: 30px 35px;
+}
+.container .title{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+}
+.container .title::before{
+	content: '';
+	position: absolute;
+	height: 3px;
+	width :30px;
+	left: 0;
+	bottom: 0;
+	background: linear-gradient(134deg,#71b7e6,#9b59b6);
+}
+.container form .user-details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+	width: calc(100%/2 - 20px);
+	margin: 10px 5px;
+	margin-bottom: 10px;
+}
+.user-details .input-box input{
+	height: 40px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	padding-left: 15px;
+	border-bottom-width: 2px;  /*bbw and border-color is related to each other*/
+}
+.user-details .input-box .details{
+	margin-bottom: 5px;
+	display: block;
+}
+.user-details .input-box input:focus{
+	border-color: #9b59b6;
+}
+.register{
+	/*border: 2px solid blue;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0;
+}
+.register button{
+	width: 60%;
+	padding: 10px 0;
+	border-radius: 5px;
+	border: none;
+	background: linear-gradient(134deg,#71b7e6,#9b59b6);
+	font-family: verdana monospace cursive;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+}
